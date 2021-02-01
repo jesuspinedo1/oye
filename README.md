@@ -1,2 +1,2 @@
 # oye
-Sitio para escuchar canciones gratuíta (e ilegalmente cof* cof*)
+Sitio para escuchar canciones de forma gratuíta (e ilegalmente cof* cof*)

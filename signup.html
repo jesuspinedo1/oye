@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Jesus Fabian Pinedo Osorio-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>OYE</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <div class="container">
+            <div class="logo">
+
+                <a class="navbar-brand titulo" href="index.html"><img src="dist/img/logo.png" style="margin-right: 0.3em;">OYE</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link titulo" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link titulo" href="canciones.html">Canciones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-align-right">
+                    <li class="nav-item">
+                        <a class="btn btn-primary m-md-1 my-1 titulo2" href="" role="button" data-toggle="modal" data-target="#ventana">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary m-md-1 my-1 titulo2" href="login.html" role="button">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary m-md-1 my-1 titulo2" href="signup.html" role="button">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <!-- Ventana modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="ventana">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title titulo2">Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>info@oye.com</p>
+                        <a href="tel:123-456-7890">+1 123-123-7890</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 
+      <div class="py-8 text-center bg-light">
+        <div class="col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-6 col-md">
+              <div class="jumbotron">
+
+                    <h1 class="display-12 font-weight-bold">¡Canciones gratis para la comunidad!</h1>
+                      <p class="lead">
+                      Con este sitio podrás escuchar canciones de manera libre...
+                      </p>              
+                      <hr class="my-4" />
+                      <a class="btn btn-primary btn-lg" href="#" role="button">Ver Canciones</a>    
+              </div>
+              <div class="col-6 col-md">
+                    <img src="dist/img/portada.jpeg" class="w-auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+-->
+
+        <!-- 
+
+<div class="py-5  bg-light p-md-1 m-4">
+  <div class="col-md-6 m-auto">
+  <form action="" class="form-signin form-horizontal py-1" accept-charset="UTF-8">
+    
+      <label for="inputEmail" class="sr-only h5">Correo electrónico</label>
+      <input
+      type="email"
+      name="email"
+      id="email"
+      class="form-control"
+      placeholder="Correo electrónico"
+      required
+      autofocus
+    />
+    
+      <label for="inputPassword" class="sr-only h5 my-2">Contraseña</label>
+            <input
+              type="password"
+              name="contrasena"
+              id="contrasena"
+              class="form-control"
+              placeholder="Contraseña"
+              required
+            />
+      <span id="errorContrasena" class="error"></span>
+
+
+      <button class="btn btn-lg btn-primary btn-block my-2" value="continuar" type="submit" onclick="return validar(this.form)">
+        Iniciar Sesión
+      </button>
+  </form>
+</div>
+</div>
+
+
+-->
+        <!-- Registro Formulario-->
+
+
+        <div class="py-5  bg-light p-md-1 m-4">
+
+            <div class="py-5 bg-light">
+                <div class="col-md-6 m-auto">
+                    <h2 class="mb-3 titulo2">Registro</h2>
+                    <hr>
+                    <form action="" class="form-signin">
+                        <div class="form-group">
+                            <label for="email" class="titulo2">Correo electrónico *</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="constrasena" class="titulo2">Contraseña *</label>
+                            <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
+                            <span id="errorContrasena" class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmacion" class="titulo2">Confirmación de contraseña *</label>
+                            <input type="password" class="form-control" placeholder="Confirmación de contraseña" id="confirmacion" name="confirmacion" />
+                            <span id="errorConfirmacion" class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="pais" class="titulo2">Género musical favorito*</label>
+                            <select class="form-control" id="musical" name="musical">
+          <option value="">Seleccione</option>
+          <option value="1">Rock</option>
+          <option value="2">Balada</option>
+          <option value="3">Salsa</option>
+          <option value="3">Otro</option>
+          </select>
+                            <span id="errorMusical" class="error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pais" class="titulo2">Edad*</label> <span id="errorEdad" class="error"></span>
+
+                            <fieldset class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="edad" id="m-20" value="m">
+                                    <label class="form-check-label" for="gridRadios1">
+                    Menor a 20
+                  </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="edad" id="20-30" value="i">
+                                    <label class="form-check-label" for="gridRadios2">
+                    Entre 20 y 40
+                  </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="edad" id="M-20" value="M">
+                                    <label class="form-check-label" for="gridRadios2">
+                    Mayor a 50
+                  </label>
+                                </div>
+                            </fieldset>
+
+                        </div>
+
+
+                        <hr>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terminos" name="terminos" value="acepta" />
+                            <label class="form-check-label" for="terminos">
+            Acepto los términos de uso *
+          </label> <span id="errorTerminos" class="error"></span>
+                        </div>
+                        <br>
+                        <p>*Campos obligatorios</p>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary titulo2" value="continuar" type="submit" onclick="return validar(this.form)">Continuar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="container-fluid py-1 bg-info text-white">
+        <div class="row">
+            <div class="col text-center">
+                Derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script>
+        function abrir() {
+            $('#ventana').modal('show');
+        }
+    </script>
+    <script src="dist/js/script_signup.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

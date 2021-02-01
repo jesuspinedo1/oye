@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Jesus Fabian Pinedo Osorio-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>OYE</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <div class="container">
+            <div class="logo">
+
+                <a class="navbar-brand titulo" href="index.html"><img src="dist/img/logo.png" style="margin-right: 0.3em;">OYE</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link titulo" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link titulo" href="canciones.html">Canciones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav text-align-right">
+                    <li class="nav-item">
+                        <a class="btn btn-primary m-md-1 my-1 titulo2" href="" role="button" data-toggle="modal" data-target="#ventana">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary m-md-1 my-1 titulo2" href="login.html" role="button">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary m-md-1 my-1 titulo2" href="signup.html" role="button">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <!-- Ventana modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="ventana">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title titulo2">Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>info@oye.com</p>
+                        <a href="tel:123-456-7890">+1 123-123-7890</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="py-5  bg-light p-md-1 m-4">
+            <div class="col-md-8 m-auto align-content-center">
+
+                <h2 class="titulo2">Canciones</h2>
+                <input type="search" name="" placeholder="Buscar..." id="filter" class="filter form-control" onkeydown="searchSong()">
+                <br>
+                <article class="card-list p-md-1 cards" id="card-list">
+                    <figure class="card player">
+                        <img src="https://i.musicaimg.com/discos/max/28816.jpg" alt="Nature">
+                        <figcaption class="card-tittle titulo2">Mansong - Juan Pablo Vega</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/mansong.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://i1.sndcdn.com/artworks-000490106007-4qbcdl-t500x500.jpg" alt="Any">
+                        <figcaption class="card-tittle titulo2">Chachachá - Jósean Log</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/chachacha.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27368eed98f05f36b1f1c374d0b" alt="Tech">
+                        <figcaption class="card-tittle titulo2">Mar - Esteman</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/mar.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://images.squarespace-cdn.com/content/v1/55934b08e4b09c6a27501d79/1555590459822-Y5YG28WYCCOR8P7HWNB7/ke17ZwdGBToddI8pDm48kDjOhhh3Yk4yGMbb0jMHcsp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdyZAk6cDDsEO2Xl3IBzAtfdiXdpp1SprKBvs5gZaGwxL_e_tUg4I8EYJ1GkY7Ru2w/J%C3%B3sean+Log+-+H%C3%A1blate+de+M%C3%AD+%28portada%29.jpg"
+                            alt="Animals">
+                        <figcaption class="card-tittle titulo2">Beso - Jósean Log</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/beso.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71OPMaAthKL._AC_UL600_SR600,600_.jpg">
+                        <figcaption class="card-tittle titulo2">Save Your Tears - The Weekend</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/save.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwninhPHcp1fE9akK3dw1kQr4bUJYW8f3owsccBWP8w=s900-c-k-c0x00ffffff-no-rj" alt="Architecture">
+                        <figcaption class="card-tittle titulo2">Tsugitsugi Shindeiku - Luxe KO</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/luxeko.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://i.pinimg.com/736x/fe/af/b4/feafb488e5477b1c8fe222652f35dbfe.jpg" alt="Animals">
+                        <figcaption class="card-tittle titulo2">New Page - JesuFan</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/jesufan.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                    <figure class="card player">
+                        <img src="https://c-sf.smule.com/rs-s93/arr/32/d3/a3ae70a5-265b-45be-935d-d69828ae7a6c_1024.jpg" alt="Animals">
+                        <figcaption class="card-tittle titulo2">A Thousand Years - Shia Sween</figcaption>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <audio controls><source src="dist/songs/katia.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </figure>
+                </article>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="container-fluid py-1 bg-info text-white">
+        <div class="row">
+            <div class="col text-center">
+                Derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script>
+        function abrir() {
+            $('#ventana').modal('show');
+        }
+    </script>
+    <script src="dist/js/script_login.js"></script>
+    <script src="dist/js/filtro_busqueda.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
